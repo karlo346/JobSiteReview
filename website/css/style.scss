@@ -1,0 +1,30 @@
+.body{
+    margin:0;
+    padding:0;
+}
+.content{
+    min-height:100vh;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+.content div{
+    border:1px #ccc solid;
+}
+.boxes-container{
+    display:flex;
+    flex-direction:row;
+}
+.box-container div{
+    flex:1;
+}
+
+@media screen and (max-width:500px){
+    .content{
+        flex-wrap: wrap;
+    }
+    .img-container{order:0;}
+    .text-content-container{order:1;}
+    .boxes-container{display:flex; flex-direction: column;}
+}
